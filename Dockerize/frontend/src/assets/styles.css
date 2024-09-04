@@ -1,0 +1,228 @@
+.landingPage_container {
+  width: 100%;
+  margin: auto;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingPage_header {
+  text-align: center;
+}
+
+.landingPage_CTA {
+  margin-top: 20px;
+}
+
+.CTA {
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.CTA:hover {
+  background-color: #6f2b09;
+}
+
+.auth_container {
+  margin: auto;
+  width: 50%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth_container h1 {
+  color: #ff5500;
+  font-weight: 700;
+}
+
+.auth_form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_value {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.CTA_button {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.CTA_button:hover {
+  background-color: #ff5500;
+  color: #f0f0f0;
+}
+
+/* NavBar Begins */
+
+.navbar {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ff5500;
+  align-content: center;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 30px;
+  color: #f0f0f0;
+}
+/* navbar ends */
+
+/* dashboard */
+
+.dashboard {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dashboard_food_list {
+  width: 80%;
+  margin: auto;
+}
+
+.new_food_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_food_container h1 {
+  color: #ff5500;
+  font-weight: 700;
+}
+
+.new_food_form {
+  width: 40%;
+  padding-top: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Food list table */
+.food-list-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Table styles */
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  color: #333;
+  cursor: pointer;
+}
+
+.food-table thead {
+  background-color: #f4f4f4;
+}
+
+.food-table th,
+.food-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.food-table th {
+  background-color: #6a2807;
+  color: white;
+}
+
+.food-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.food-table td {
+  vertical-align: top;
+}
+
+.food_details_modal {
+  position: fixed;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background: rgb(212, 211, 211);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.food_details_modal h2 {
+  margin-top: 0;
+}
+
+.food_details_modal button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff5500;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.food_details_modal button:hover {
+  background-color: #6a2807;
+}
+
+.modal_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .food-table {
+    font-size: 14px;
+  }
+  .food-table th,
+  .food-table td {
+    padding: 8px;
+  }
+}
